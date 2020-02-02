@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    var flags = [String]()
+    var countries = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,22 @@ class ViewController: UITableViewController {
         for item in items {
             if item.hasSuffix("png") {
                 // This is a flag to load
-                flags.append(item)
+                countries.append(item)
             }
         }
-        flags.sort()
+        countries.sort()
         
-        print(flags)
+        print(countries)
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return countries.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
+        cell.textLabel?.text = countries[indexPath.row]
+        return cell
     }
 }
 
