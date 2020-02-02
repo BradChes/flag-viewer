@@ -21,6 +21,8 @@ class DetailViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         
         if let countryToLoad = selectedCountryImage {
+            imageView.layer.borderWidth = 1
+            imageView.layer.borderColor = UIColor.lightGray.cgColor
             imageView.image = UIImage(named: countryToLoad)
         }
     }

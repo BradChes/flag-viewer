@@ -38,6 +38,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
+        cell.imageView?.layer.borderWidth = 1
+        cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
         cell.imageView?.image = UIImage(named: countries[indexPath.row])
         cell.textLabel?.text = titleFormation(countries[indexPath.row])
         return cell
