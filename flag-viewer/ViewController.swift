@@ -8,13 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    var flags = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        title = "Flag Viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true
+                
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        let items = try! fm.contentsOfDirectory(atPath: path)
+        
+        for item in items {
+            if item.hasSuffix("png") {
+                // This is a flag to load
+                flags.append(item)
+            }
+        }
+        flags.sort()
+        
+        print(flags)
     }
-
-
 }
 
