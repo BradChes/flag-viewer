@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C690BD4923E729A30036B7E6 /* flag-viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flag-viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C690BD4923E729A30036B7E6 /* Flag Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flag Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C690BD4C23E729A30036B7E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C690BD4E23E729A30036B7E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C690BD5023E729A30036B7E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		C690BD4A23E729A30036B7E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C690BD4923E729A30036B7E6 /* flag-viewer.app */,
+				C690BD4923E729A30036B7E6 /* Flag Viewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			);
 			name = "flag-viewer";
 			productName = "flag-viewer";
-			productReference = C690BD4923E729A30036B7E6 /* flag-viewer.app */;
+			productReference = C690BD4923E729A30036B7E6 /* Flag Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.flag-viewer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flag Viewer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.flag-viewer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flag Viewer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
