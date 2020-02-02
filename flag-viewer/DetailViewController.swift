@@ -11,15 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    var selectedCountry: String?
+    var selectedCountryImage: String?
+    var selectedCountryTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedCountry
+        title = selectedCountryTitle
         navigationItem.largeTitleDisplayMode = .never
         
-        if let countryToLoad = selectedCountry {
+        if let countryToLoad = selectedCountryImage {
             imageView.image = UIImage(named: countryToLoad)
         }
     }
