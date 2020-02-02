@@ -28,8 +28,6 @@ class ViewController: UITableViewController {
             }
         }
         countries.sort()
-        
-        print(countries)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

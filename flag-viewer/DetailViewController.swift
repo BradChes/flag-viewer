@@ -10,20 +10,35 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
-    
+
     var selectedCountryImage: String?
     var selectedCountryTitle: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         title = selectedCountryTitle
         navigationItem.largeTitleDisplayMode = .never
-        
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+
         if let countryToLoad = selectedCountryImage {
             imageView.layer.borderWidth = 1
             imageView.layer.borderColor = UIColor.lightGray.cgColor
             imageView.image = UIImage(named: countryToLoad)
         }
+    }
+
+    @objc func shareTapped() {
+        guard let flag = imageView.image?.jpegData(compressionQuality: 0.8), let name = selectedCountryTitle else {
+             print("No image found")
+             return
+         }
+
+         let vc = UIActivityViewController(activityItems: [flag, name], applicationActivities: [])
+
+         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+
+         present(vc, animated: true)
     }
 }
