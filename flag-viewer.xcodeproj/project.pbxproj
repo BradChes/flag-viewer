@@ -25,6 +25,7 @@
 		C690BD7623E72F2A0036B7E6 /* nigeria.png in Resources */ = {isa = PBXBuildFile; fileRef = C690BD6B23E72F290036B7E6 /* nigeria.png */; };
 		C690BD7723E72F2A0036B7E6 /* poland.png in Resources */ = {isa = PBXBuildFile; fileRef = C690BD6C23E72F290036B7E6 /* poland.png */; };
 		C690BD7823E72F2A0036B7E6 /* us.png in Resources */ = {isa = PBXBuildFile; fileRef = C690BD6D23E72F2A0036B7E6 /* us.png */; };
+		C690BD7A23E7338E0036B7E6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C690BD7923E7338E0036B7E6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C690BD6B23E72F290036B7E6 /* nigeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nigeria.png; sourceTree = "<group>"; };
 		C690BD6C23E72F290036B7E6 /* poland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poland.png; sourceTree = "<group>"; };
 		C690BD6D23E72F2A0036B7E6 /* us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = us.png; sourceTree = "<group>"; };
+		C690BD7923E7338E0036B7E6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +82,15 @@
 		C690BD4B23E729A30036B7E6 /* flag-viewer */ = {
 			isa = PBXGroup;
 			children = (
-				C690BD6023E72E1C0036B7E6 /* Content */,
 				C690BD4C23E729A30036B7E6 /* AppDelegate.swift */,
+				C690BD5523E729A70036B7E6 /* Assets.xcassets */,
+				C690BD6023E72E1C0036B7E6 /* Content */,
+				C690BD7923E7338E0036B7E6 /* DetailViewController.swift */,
+				C690BD5A23E729A70036B7E6 /* Info.plist */,
+				C690BD5723E729A70036B7E6 /* LaunchScreen.storyboard */,
+				C690BD5223E729A30036B7E6 /* Main.storyboard */,
 				C690BD4E23E729A30036B7E6 /* SceneDelegate.swift */,
 				C690BD5023E729A30036B7E6 /* ViewController.swift */,
-				C690BD5223E729A30036B7E6 /* Main.storyboard */,
-				C690BD5523E729A70036B7E6 /* Assets.xcassets */,
-				C690BD5723E729A70036B7E6 /* LaunchScreen.storyboard */,
-				C690BD5A23E729A70036B7E6 /* Info.plist */,
 			);
 			path = "flag-viewer";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				C690BD5123E729A30036B7E6 /* ViewController.swift in Sources */,
 				C690BD4D23E729A30036B7E6 /* AppDelegate.swift in Sources */,
 				C690BD4F23E729A30036B7E6 /* SceneDelegate.swift in Sources */,
+				C690BD7A23E7338E0036B7E6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
