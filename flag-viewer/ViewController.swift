@@ -22,7 +22,7 @@ class ViewController: UITableViewController {
         let items = try! fm.contentsOfDirectory(atPath: path)
         
         for item in items {
-            if item.hasSuffix("png") {
+            if item.hasSuffix("png") && !item.contains("@") {
                 // This is a flag to load
                 countries.append(item)
             }
